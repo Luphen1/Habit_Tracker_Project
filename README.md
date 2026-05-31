@@ -78,20 +78,26 @@ datetime (standard library)
 ### Installation
 
 1. Clone the repository:
-   ```
+
+```
+
 git clone https://github.com/Luphen1/Habit_Tracker_Project.git
 cd Habit_Tracker_Project
 
-   ```
+```
+
 2. Ensure Python 3.9+ is installed:
 
 ```
+
 python --version
+
 
 ```
 
 
 ### Code Implementation
+
 habit.py → Defines the Habit class with attributes (name, periodicity, completions) and methods (complete_task(), streak()).
 
 cli.py → Provides the command-line interface for interacting with habits (list, add, complete, streaks).

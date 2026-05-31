@@ -74,10 +74,101 @@ datetime (standard library)
 
 
 ### Installation
+
 1. Clone the repository:
    ```
 git clone https://github.com/Luphen1/Habit_Tracker_Project.git
 cd Habit_Tracker_Project
 
    ```
-2.
+2. Ensure Python 3.9+ is installed:
+
+```
+python --version
+
+```
+
+### How to Run the App
+
+Run the CLI via:
+
+```
+python main.py
+
+```
+
+By default, it lists all habits. You can specify actions with arguments.
+
+### How to Use Each Command
+
+```
+List habits:
+
+```
+bash
+python main.py list
+
+```
+
+Displays all habits with their streaks.
+
+Add a habit:
+
+bash
+python main.py add --name "Exercise" --periodicity daily
+Adds a new habit with the given name and frequency.
+
+Complete a habit:
+
+bash
+python main.py complete --name "Exercise"
+Marks the habit as completed for the current date.
+
+View streaks:
+
+bash
+python main.py streaks
+Shows the longest streak overall and streaks per habit.
+
+bash
+python main.py streaks --name "Exercise"
+Shows the streak for a specific habit.
+
+```
+
+
+### Predefined Habits
+The system allows users to define habits with daily or weekly periodicity. Any other frequency (e.g., monthly) raises a ValueError.
+
+
+### Analytics Module
+
+list_habits(habits) → Returns names of all habits.
+
+habits_by_periodicity(habits, periodicity) → Filters habits by frequency.
+
+longest_streak(habits) → Returns the longest streak across all habits.
+
+longest_streak_per_habit(habits) → Returns streaks per habit in dictionary form.
+
+
+### How to Run Tests
+
+Unit tests are located in tests/test_habit.py. Run them with:
+
+```
+python -m unittest tests/test_habit.py
+```
+
+Test include:
+
+Habit creation
+Task completion
+Daily streak calculation
+Weekly streak calculation
+Invalid periodicity handling
+
+
+
+
+

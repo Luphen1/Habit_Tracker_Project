@@ -109,6 +109,7 @@ python --version
 5: database.py: Handles SQLite database initialization and persistence.
 
 6. tests/test_habit.py: Unit tests for verifying habit creation, completion, streaks, and error handling.
+   
 
 Each file’s code were included below for reference:
 
@@ -170,13 +171,13 @@ The system allows users to define habits with daily or weekly periodicity. Any o
 
 ### Analytics Module
 
-list_habits(habits) → Returns names of all habits.
+list_habits(habits): Returns names of all habits.
 
-habits_by_periodicity(habits, periodicity) → Filters habits by frequency.
+habits_by_periodicity(habits, periodicity): Filters habits by frequency.
 
-longest_streak(habits) → Returns the longest streak across all habits.
+longest_streak(habits): Returns the longest streak across all habits.
 
-longest_streak_per_habit(habits) → Returns streaks per habit in dictionary form.
+longest_streak_per_habit(habits): Returns streaks per habit in dictionary form.
 
 
 ### How to Run Tests

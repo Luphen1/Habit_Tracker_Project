@@ -49,14 +49,14 @@ The Habit Tracker is a Python-based command-line application designed to help us
 
 Habit_Tracker_Project/
 │
-├── habit.py          # Habit class definition
-├── database.py       # Database initialization and persistence functions
-├── analytics.py      # Analytics functions for streaks and habit insights
-├── cli.py            # Command-line interface logic
-├── main.py           # Entry point to run the CLI
+├── habit.py: Habit class definition
+├── database.py: Database initialization and persistence functions
+├── analytics.py: Analytics functions for streaks and habit insights
+├── cli.py: Command-line interface logic
+├── main.py: Entry point to run the CLI
 ├── tests/
-│   └── test_habit.py # Unit tests for Habit class
-└── README.md         # Project documentation
+   └── test_habit.py: Unit tests for Habit class
+
 
 ```
 

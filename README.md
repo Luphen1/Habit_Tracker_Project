@@ -464,7 +464,6 @@ By default, it lists all habits. You can specify actions with arguments.
 
 ### How to Use Each Command
 
-```
 List habits:
 
 ```
@@ -477,27 +476,44 @@ Displays all habits with their streaks.
 
 Add a habit:
 
+
+```
+
 bash
 python main.py add --name "Exercise" --periodicity daily
+
+```
+
 Adds a new habit with the given name and frequency.
 
 Complete a habit:
 
+```
+
 bash
 python main.py complete --name "Exercise"
+
+```
+
 Marks the habit as completed for the current date.
 
 View streaks:
 
+```
 bash
 python main.py streaks
-Shows the longest streak overall and streaks per habit.
-
-bash
-python main.py streaks --name "Exercise"
-Shows the streak for a specific habit.
 
 ```
+Shows the longest streak overall and streaks per habit.
+
+
+```
+bash
+python main.py streaks --name "Exercise"
+
+```
+Shows the streak for a specific habit.
+
 
 
 ### Predefined Habits

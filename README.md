@@ -98,19 +98,19 @@ python --version
 
 ### Code Implementation
 
-habit.py → Defines the Habit class with attributes (name, periodicity, completions) and methods (complete_task(), streak()).
+1. habit.py: Defines the Habit class with attributes (name, periodicity, completions) and methods (complete_task(), streak()).
 
-cli.py → Provides the command-line interface for interacting with habits (list, add, complete, streaks).
+2. cli.py: Provides the command-line interface for interacting with habits (list, add, complete, streaks).
 
-main.py → Entry point that runs the CLI.
+3. main.py: Entry point that runs the CLI.
 
-analytics.py → Contains pure functions for analyzing habits (listing, filtering, longest streaks).
+4. analytics.py: Contains pure functions for analyzing habits (listing, filtering, longest streaks).
 
-database.py → Handles SQLite database initialization and persistence.
+5: database.py: Handles SQLite database initialization and persistence.
 
-tests/test_habit.py → Unit tests for verifying habit creation, completion, streaks, and error handling.
+6. tests/test_habit.py: Unit tests for verifying habit creation, completion, streaks, and error handling.
 
-Each file’s code is included below for reference:
+Each file’s code were included below for reference:
 
 
 

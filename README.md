@@ -204,6 +204,30 @@ They take input (habit list) and return output without side effects.
 This separation makes them reusable and testable.
 
 
+### Database Structure
+
+SQLite database schema:
+
+```
+CREATE TABLE habits (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    periodicity TEXT NOT NULL,
+    created_at TEXT NOT NULL
+);
+
+CREATE TABLE completions (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    habit_id INTEGER NOT NULL,
+    completed_at TEXT NOT NULL,
+    FOREIGN KEY (habit_id) REFERENCES habits(id)
+);
+
+```
+habits: Stores habit metadata.
+
+completions: Stores timestamps of completed habits.
+
 
 
 

@@ -397,7 +397,7 @@ def populate_default_habits() -> None:
 ```
 
 
-**test_habit_tracker.py*8
+**test_habit_tracker.py**
 
 ```
 import unittest

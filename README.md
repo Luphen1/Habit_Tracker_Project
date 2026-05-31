@@ -169,6 +169,41 @@ Weekly streak calculation
 Invalid periodicity handling
 
 
+### Technologies Used
+Habit creation
+
+Task completion
+
+Daily streak calculation
+
+Weekly streak calculation
+
+Invalid periodicity handling
+
+### OOP Design
+
+Habit Class:
+
+Attributes: name, periodicity, completions
+
+Methods:
+
+complete_task(): Marks a habit as complete
+
+streak(): Calculates streak based on periodicity
+
+Encapsulation ensures habits are self-contained objects with their own logic.
+
+
+### Functional Programming Design
+
+Analytics functions (list_habits, longest_streak, etc.) are pure functions:
+
+They take input (habit list) and return output without side effects.
+
+This separation makes them reusable and testable.
+
+
 
 
 

@@ -15,6 +15,8 @@
 - [Requirements](#Requirements)
 
 - [Installation](#Installation)
+
+- [Code Implementation](#Code-Implementation)
   
 - [How to Run the App](#How-To-Run-The-App)
 
@@ -87,6 +89,25 @@ cd Habit_Tracker_Project
 python --version
 
 ```
+
+
+### Code Implementation
+habit.py → Defines the Habit class with attributes (name, periodicity, completions) and methods (complete_task(), streak()).
+
+cli.py → Provides the command-line interface for interacting with habits (list, add, complete, streaks).
+
+main.py → Entry point that runs the CLI.
+
+analytics.py → Contains pure functions for analyzing habits (listing, filtering, longest streaks).
+
+database.py → Handles SQLite database initialization and persistence.
+
+tests/test_habit.py → Unit tests for verifying habit creation, completion, streaks, and error handling.
+
+Each file’s code is included below for reference:
+
+
+
 
 ### How to Run the App
 
